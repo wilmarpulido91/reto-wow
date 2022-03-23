@@ -27,7 +27,6 @@ export class DashboardComponent implements OnInit {
         // Coloco un setTimeOut para ver el loader
         setTimeout(() => {
           this.isLoading = false;
-          console.log(res);
           this.agencies = res;
         }, 600);
       },

@@ -1,12 +1,14 @@
 <app-loader [isLoading]="isLoading"></app-loader>
-<section class="agency-list">
-  <article class="agency-box" *ngFor="let agency of agencies" (click)="goToDetail($event, agency)">
-    <div class="agency-box--image"></div>
-    <div class="agency-box--info">
-      <h3>{{agency.agencia}}</h3>
-      <span>{{agency.provincia}}</span>
-      <span>{{agency.direccion}}</span>
-    </div>
-    <i class="far fa-star"></i>
-  </article>
+<section class="app-content">
+  <div class="agency-list">
+    <article class="agency-box" *ngFor="let agency of agencies" (click)="goToDetail($event, agency)">
+      <div class="agency-box--image"></div>
+      <div class="agency-box--info">
+        <h3>{{agency.agencia}}</h3>
+        <span>{{agency.provincia}}</span>
+        <span>{{agency.direccion}}</span>
+      </div>
+      <i class="far fa-star"></i>
+    </article>
+  </div>
 </section>

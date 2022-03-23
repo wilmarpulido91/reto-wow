@@ -2,3 +2,31 @@
   padding-top: 30px;
   padding-bottom: 30px;
 }
+
+.app-button {
+  border: none;
+  color: $cl-white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: $secundary-color;
+
+  &:hover {
+    background-color: $primary-color;
+  }
+
+  &:disabled {
+    &:hover {
+      background-color: $secundary-color;
+    }
+  }
+}
+
+.app-error {
+  color: $cl-red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}

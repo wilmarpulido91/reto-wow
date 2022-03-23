@@ -5,6 +5,7 @@ import { UIModule } from 'xplat/ui';
 import { AgencyComponent } from './agency.component';
 import { AgencyContainer } from './agency.container';
 import { RouterModule } from '@angular/router';
+import { BcpService } from 'xplat/core/services';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { RouterModule } from '@angular/router';
         pathMatch: 'full'
       }
     ])
-  ]
+  ],
+  providers: [BcpService]
 })
 export class AgencyModule { }

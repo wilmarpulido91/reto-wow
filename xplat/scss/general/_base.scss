@@ -20,3 +20,25 @@ p {
   margin: 0;
   padding: 0;
 }
+
+form {
+  width: 100%;
+
+  label {
+    width: 100%;
+    margin-bottom: 5px;
+    color: $secundary-color;
+  }
+
+  input {
+    width: 100%;
+    padding: 5px;
+    border-width: 0 0 1px 0;
+  }
+}
+
+button {
+  &:disabled {
+    opacity: 0.5;
+  }
+}

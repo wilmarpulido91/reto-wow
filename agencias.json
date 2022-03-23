@@ -2,11 +2,9 @@
   "agencias": [
     {
       "id": 1,
-      "agencia": "Las Flores",
-      "distrito": "San Juan De Lurigancho",
-      "provincia": "Lima",
-      "departamento": "Lima",
+      "agencia": "Las Florecitas",
       "direccion": "Las Flores de Primavera 1487",
+      "distrito": "San Juan De Lurigancho",
       "lat": -77.01232817,
       "lon": -12.0046896
     },
@@ -22,13 +20,11 @@
     },
     {
       "id": 3,
-      "agencia": "Conquistadores",
-      "distrito": "San Isidro",
-      "provincia": "Lima",
-      "departamento": "Lima",
+      "agencia": "Conquistadores edit",
       "direccion": "Av. Conquistadores 968",
+      "distrito": "San Isidro",
       "lat": -77.03735314,
-      "lon": -12.10568371
+      "lon": "-12.10568371"
     },
     {
       "id": 4,
@@ -42,21 +38,17 @@
     },
     {
       "id": 5,
-      "agencia": "Siglo XX (030)",
-      "distrito": "Arequipa",
-      "provincia": "Arequipa",
-      "departamento": "Arequipa",
+      "agencia": "Siglo XX",
       "direccion": "Av. Siglo XX N°122 Cercado de Arequipa",
+      "distrito": "Arequipa",
       "lat": -71.530671,
       "lon": -16.399615
     },
     {
       "id": 6,
       "agencia": "Constructores",
-      "distrito": "La Molina",
-      "provincia": "Lima",
-      "departamento": "Lima",
       "direccion": "Av Constructores Cuadra 1 Mz. D Lote 5",
+      "distrito": "La Molina",
       "lat": -76.957802,
       "lon": -12.067233
     },
@@ -200,9 +192,7 @@
       "lat": -78.506083,
       "lon": -7.154024
     },
-  
     {
-  
       "id": 21,
       "agencia": "Hersil",
       "distrito": "Ate",

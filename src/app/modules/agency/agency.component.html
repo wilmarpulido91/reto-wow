@@ -4,46 +4,51 @@
     <div class="row">
       <div class="col-12 col-md-6">
         <div class="form-group">
-          <input placeholder="Nombre" formControlName="name" type="text">
+          <label for="name">Nombre</label>
+          <input title="Nombre" formControlName="name" type="text">
           <div *ngIf="agencyPresenter.submittedAgency && agencyPresenter.fAgency.name.errors">
-            <span *ngIf="agencyPresenter.fAgency.name.errors.required">El nombre de la agencia es obligatorio.</span>
+            <span class="app-error" *ngIf="agencyPresenter.fAgency.name.errors.required">El nombre de la agencia es obligatorio.</span>
           </div>
         </div>
       </div>
       <div class="col-12 col-md-6">
         <div class="form-group">
-          <input placeholder="Direccion" formControlName="address" type="text">
+          <label for="address">Dirección</label>
+          <input title="Direccion" formControlName="address" type="text">
           <div *ngIf="agencyPresenter.submittedAgency && agencyPresenter.fAgency.address.errors">
-            <span *ngIf="agencyPresenter.fAgency.address.errors.required">La direccion es obligatoria.</span>
+            <span class="app-error" *ngIf="agencyPresenter.fAgency.address.errors.required">La dirección es obligatoria.</span>
           </div>
         </div>
       </div>
       <div class="col-12 col-md-6">
         <div class="form-group">
-          <input placeholder="Distrito" formControlName="distrit" type="text">
+          <label for="distrit">Distrito</label>
+          <input title="Distrito" formControlName="distrit" type="text">
           <div *ngIf="agencyPresenter.submittedAgency && agencyPresenter.fAgency.distrit.errors">
-            <span *ngIf="agencyPresenter.fAgency.distrit.errors.required">El Distrito es obligatoria.</span>
+            <span class="app-error" *ngIf="agencyPresenter.fAgency.distrit.errors.required">El Distrito es obligatorio.</span>
           </div>
         </div>
       </div>
       <div class="col-12 col-md-6">
         <div class="form-group">
-          <input placeholder="Latitud" formControlName="latitude" type="text">
+          <label for="latitude">Latitud</label>
+          <input title="Latitud" formControlName="latitude" type="text">
           <div *ngIf="agencyPresenter.submittedAgency && agencyPresenter.fAgency.latitude.errors">
-            <span *ngIf="agencyPresenter.fAgency.latitude.errors.required">La Latitud es obligatoria.</span>
+            <span class="app-error" *ngIf="agencyPresenter.fAgency.latitude.errors.required">La Latitud es obligatoria.</span>
           </div>
         </div>
       </div>
       <div class="col-12 col-md-6">
         <div class="form-group">
-          <input placeholder="Longitud" formControlName="length" type="text">
+          <label for="length">Longitud</label>
+          <input title="Longitud" formControlName="length" type="text">
           <div *ngIf="agencyPresenter.submittedAgency && agencyPresenter.fAgency.length.errors">
-            <span *ngIf="agencyPresenter.fAgency.length.errors.required">La Longitud es obligatoria.</span>
+            <span class="app-error" *ngIf="agencyPresenter.fAgency.length.errors.required">La Longitud es obligatoria.</span>
           </div>
         </div>
       </div>
-      <div class="col-12 col-md-6 offset-md-6">
-        <button type="button" (click)="agencyPresenter.onSubmitAgency()">Actualizar</button>
+      <div class="col-12 d-flex justify-content-center">
+        <button class="app-button h-mt-30" type="button" [disabled]="agencyPresenter.isInvalid" (click)="agencyPresenter.onSubmitAgency()">Actualizar</button>
       </div>
     </div>
   </form>  

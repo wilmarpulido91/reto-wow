@@ -11,4 +11,12 @@ export class BcpService {
   getAllAgencies(): Observable<Agency[]> {
     return this.http.get<Agency[]>(`${environment.backend}/agencias`);
   }
+
+  getAgencyById(id: number): Observable<Agency> {
+    return this.http.get<Agency>(`${environment.backend}/agencias/${id}`);
+  }
+
+  editAgencyById(id: number, agency: Agency): Observable<Agency> {
+    return this.http.put<Agency>(`${environment.backend}/agencias/${id}`, agency);
+  }
 }

@@ -3,6 +3,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { UIModule } from 'xplat/ui';
+import { HeaderModule } from './shared/header/header.module';
 
 import { AppComponent } from './app.component';
 
@@ -14,7 +15,8 @@ import { AppComponent } from './app.component';
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
-    UIModule
+    UIModule,
+    HeaderModule
   ],
   providers: [],
   bootstrap: [AppComponent]
