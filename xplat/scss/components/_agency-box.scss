@@ -1,0 +1,58 @@
+.agency-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid $cl-gray-1;
+  cursor: pointer;
+
+  &--image {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../../../src/assets/images/agencia.jpg');
+  }
+
+  &--info {
+    flex: 1;
+    margin: 0 15px;
+
+    h3 {
+      font-size: 18px;
+      font-weight: $fw-bold;
+      margin-bottom: 10px;
+    }
+
+    span {
+      width: 100%;
+      display: block;
+      margin-bottom: 10px;
+      font-weight: $fw-bold;
+
+      + span {
+        font-size: 12px;
+        margin-bottom: 0;
+        font-weight: $fw-normal;
+      }
+    }
+  }
+
+  i {
+    font-size: 20px;
+  }
+
+  &:hover {
+    background-color: $cl-gray-1;
+  }
+
+  @media only screen and (min-width: 768px) {
+    &--image {
+      width: 70px;
+      height: 70px;
+    }
+  }
+}

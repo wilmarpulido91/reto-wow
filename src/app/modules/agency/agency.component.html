@@ -1,0 +1,50 @@
+<app-loader [isLoading]="isLoading"></app-loader>
+<section class="app-content">
+  <form [formGroup]="agencyPresenter.agencyForm">
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <div class="form-group">
+          <input placeholder="Nombre" formControlName="name" type="text">
+          <div *ngIf="agencyPresenter.submittedAgency && agencyPresenter.fAgency.name.errors">
+            <span *ngIf="agencyPresenter.fAgency.name.errors.required">El nombre de la agencia es obligatorio.</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="form-group">
+          <input placeholder="Direccion" formControlName="address" type="text">
+          <div *ngIf="agencyPresenter.submittedAgency && agencyPresenter.fAgency.address.errors">
+            <span *ngIf="agencyPresenter.fAgency.address.errors.required">La direccion es obligatoria.</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="form-group">
+          <input placeholder="Distrito" formControlName="distrit" type="text">
+          <div *ngIf="agencyPresenter.submittedAgency && agencyPresenter.fAgency.distrit.errors">
+            <span *ngIf="agencyPresenter.fAgency.distrit.errors.required">El Distrito es obligatoria.</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="form-group">
+          <input placeholder="Latitud" formControlName="latitude" type="text">
+          <div *ngIf="agencyPresenter.submittedAgency && agencyPresenter.fAgency.latitude.errors">
+            <span *ngIf="agencyPresenter.fAgency.latitude.errors.required">La Latitud es obligatoria.</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="form-group">
+          <input placeholder="Longitud" formControlName="length" type="text">
+          <div *ngIf="agencyPresenter.submittedAgency && agencyPresenter.fAgency.length.errors">
+            <span *ngIf="agencyPresenter.fAgency.length.errors.required">La Longitud es obligatoria.</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 offset-md-6">
+        <button type="button" (click)="agencyPresenter.onSubmitAgency()">Actualizar</button>
+      </div>
+    </div>
+  </form>  
+</section>
